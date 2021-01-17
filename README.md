@@ -7,12 +7,12 @@ api server使用了ASP.NET CORE 3.1 MVC，采用RESTful API设计，调用类库
 
 client使用了ASP.NET frame MVC，使用vue-axios对controller发起ajax请求
 
-##swagger
+## swagger
 ![Image text](https://raw.githubusercontent.com/dvbb/MyBank/master/图片1.png)
 
 
-##取款界面
+## 取款界面
 ![Image text](https://raw.githubusercontent.com/dvbb/MyBank/master/图片2.png)
 
-##利息清单
+## 利息清单
 ![Image text](https://raw.githubusercontent.com/dvbb/MyBank/master/图片3.png)
