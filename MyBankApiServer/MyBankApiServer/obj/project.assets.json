@@ -2687,6 +2687,51 @@
         "runtime": {
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "DataTransfer/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DataTransfer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataTransfer.dll": {}
+        }
+      },
+      "IProvider/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DataTransfer": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IProvider.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IProvider.dll": {}
+        }
+      },
+      "Provider/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DataTransfer": "1.0.0",
+          "IProvider": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Provider.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Provider.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win7-x86": {
@@ -5218,6 +5263,51 @@
         },
         "runtime": {
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "DataTransfer/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DataTransfer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataTransfer.dll": {}
+        }
+      },
+      "IProvider/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DataTransfer": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IProvider.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IProvider.dll": {}
+        }
+      },
+      "Provider/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DataTransfer": "1.0.0",
+          "IProvider": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Provider.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Provider.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -10180,10 +10270,32 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "DataTransfer/1.0.0": {
+      "type": "project",
+      "path": "../DataTransfer/DataTransfer.csproj",
+      "msbuildProject": "../DataTransfer/DataTransfer.csproj"
+    },
+    "IProvider/1.0.0": {
+      "type": "project",
+      "path": "../IProvider/IProvider.csproj",
+      "msbuildProject": "../IProvider/IProvider.csproj"
+    },
+    "Provider/1.0.0": {
+      "type": "project",
+      "path": "../Provider/Provider.csproj",
+      "msbuildProject": "../Provider/Provider.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.1": [
+      "DataTransfer >= 1.0.0",
+      "IProvider >= 1.0.0",
       "Microsoft.AspNetCore >= 2.1.7",
       "Microsoft.AspNetCore.CookiePolicy >= 2.1.14",
       "Microsoft.AspNetCore.HttpsPolicy >= 2.1.1",
@@ -10194,6 +10306,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.1",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.1.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
+      "Provider >= 1.0.0",
+      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.2.1"
     ]
   },
@@ -10204,11 +10318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rain\\source\\repos\\MyBankApiServer\\MyBankApiServer\\MyBankApiServer.csproj",
+      "projectUniqueName": "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\MyBankApiServer\\MyBankApiServer.csproj",
       "projectName": "MyBankApiServer",
-      "projectPath": "C:\\Users\\Rain\\source\\repos\\MyBankApiServer\\MyBankApiServer\\MyBankApiServer.csproj",
+      "projectPath": "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\MyBankApiServer\\MyBankApiServer.csproj",
       "packagesPath": "C:\\Users\\Rain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rain\\source\\repos\\MyBankApiServer\\MyBankApiServer\\obj\\",
+      "outputPath": "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\MyBankApiServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10226,7 +10340,20 @@
       },
       "frameworks": {
         "net461": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\DataTransfer\\DataTransfer.csproj": {
+              "projectPath": "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\DataTransfer\\DataTransfer.csproj"
+            },
+            "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\IProvider\\IProvider.csproj": {
+              "projectPath": "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\IProvider\\IProvider.csproj"
+            },
+            "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\Provider\\Provider.csproj": {
+              "projectPath": "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\Provider\\Provider.csproj"
+            },
+            "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Rain\\Desktop\\新建文件夹\\MyBank\\MyBankApiServer\\Shared\\Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

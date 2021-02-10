@@ -1,17 +1,18 @@
-﻿using BankApiServer.Models;
-using BankApiServer.utilities;
+﻿using DataTransfer;
+using IProvider;
+using Shared;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace BankApiServer.Managers
+namespace Provider
 {
-    public static class employeeManager
+    public class EmployeeProvider : IEmployeeProvider
     {
-
-        public static List<Employee> GetEmployee()
+        public List<Employee> GetEmployee()
         {
             List<Employee> list = new List<Employee>();
             SqlParameter[] paras = { };
@@ -27,7 +28,7 @@ namespace BankApiServer.Managers
             return list;
         }
 
-        public static Employee GetEmployee(string id)
+        public Employee GetEmployee(string id)
         {
             Employee employee = new Employee();
             SqlParameter[] paras =
@@ -45,7 +46,7 @@ namespace BankApiServer.Managers
         }
 
 
-        public static int UpdatePwd(string eid, string pwd)
+        public int UpdatePwd(string eid, string pwd)
         {
             SqlParameter[] paras =
             {

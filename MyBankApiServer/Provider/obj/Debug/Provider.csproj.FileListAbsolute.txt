@@ -1,0 +1,13 @@
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\Provider.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\Provider.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\DataTransfer.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\IProvider.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\Shared.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\DataTransfer.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\IProvider.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\bin\Debug\Shared.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\obj\Debug\Provider.csprojAssemblyReference.cache
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\obj\Debug\Provider.csproj.CoreCompileInputs.cache
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\obj\Debug\Provider.csproj.CopyComplete
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\obj\Debug\Provider.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Provider\obj\Debug\Provider.pdb

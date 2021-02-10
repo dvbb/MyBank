@@ -1,0 +1,6 @@
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\DataTransfer\obj\Debug\DataTransfer.csprojAssemblyReference.cache
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\DataTransfer\obj\Debug\DataTransfer.csproj.CoreCompileInputs.cache
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\DataTransfer\bin\Debug\DataTransfer.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\DataTransfer\bin\Debug\DataTransfer.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\DataTransfer\obj\Debug\DataTransfer.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\DataTransfer\obj\Debug\DataTransfer.pdb

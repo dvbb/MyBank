@@ -1,21 +1,21 @@
-﻿using BankApiServer.Models;
-using BankApiServer.utilities;
+﻿using DataTransfer;
+using IProvider;
+using Shared;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace BankApiServer.Managers
+namespace Provider
 {
-    public static class depositorManager
+    public class DepositorProvider : IDepositorProvider
     {
-
-        public static List<Depositor> GetDepositor()
+        public List<Depositor> GetDepositor()
         {
             List<Depositor> list = new List<Depositor>();
-            SqlParameter[] paras = {};
+            SqlParameter[] paras = { };
             SqlDataReader dr = SqlHelper.SearchSQL("proc_depositor_none_select", paras);
             while (dr.Read())
             {
@@ -29,7 +29,7 @@ namespace BankApiServer.Managers
             return list;
         }
 
-        public static Depositor GetDepositor(string id)
+        public Depositor GetDepositor(string id)
         {
             Depositor depositor = new Depositor();
             SqlParameter[] paras =
@@ -47,7 +47,7 @@ namespace BankApiServer.Managers
             return depositor;
         }
 
-        public static int InsertDepositor(string did,string pwd,string dname)
+        public int InsertDepositor(string did, string pwd, string dname)
         {
             SqlParameter[] paras =
             {
@@ -59,7 +59,7 @@ namespace BankApiServer.Managers
             return result;
         }
 
-        public static int UpdatePwd(string did, string pwd)
+        public int UpdatePwd(string did, string pwd)
         {
             SqlParameter[] paras =
             {
@@ -69,6 +69,5 @@ namespace BankApiServer.Managers
             int result = SqlHelper.UpdateSQL("proc_depositor_pwd_update", paras);
             return result;
         }
-
     }
 }

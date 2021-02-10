@@ -1,5 +1,5 @@
-﻿using BankApiServer.Managers;
-using BankApiServer.Models;
+﻿using DataTransfer;
+using IProvider;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -13,10 +13,16 @@ namespace BankApiServer.Controllers
 
     public class DepositorController : Controller
     {
+        private IDepositorProvider _depositor;
+
+        public DepositorController(IDepositorProvider depositor)
+        {
+            _depositor = depositor;
+        }
         [HttpGet]
         public List<Depositor> GetDepositorAll()
         {
-            return depositorManager.GetDepositor();
+            return _depositor.GetDepositor();
         }
 
 
@@ -24,19 +30,19 @@ namespace BankApiServer.Controllers
         [HttpGet("{id}")]
         public Depositor GetDepositor(string id)
         {
-            return depositorManager.GetDepositor(id);
+            return _depositor.GetDepositor(id);
         }
 
         [HttpPost("{id}/{pwd}/{name}")]
-        public int InsertDepositor(string id,string pwd,string name)
+        public int InsertDepositor(string id, string pwd, string name)
         {
-            return depositorManager.InsertDepositor(id,pwd,name);
+            return _depositor.InsertDepositor(id, pwd, name);
         }
 
         [HttpPut("{id}/{pwd}")]
         public int UpdatePwd(string id, string pwd)
         {
-            return depositorManager.UpdatePwd(id, pwd);
+            return _depositor.UpdatePwd(id, pwd);
         }
 
     }

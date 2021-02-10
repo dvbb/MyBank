@@ -1,0 +1,11 @@
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\bin\Debug\IProvider.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\bin\Debug\IProvider.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\bin\Debug\DataTransfer.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\bin\Debug\Shared.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\bin\Debug\DataTransfer.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\bin\Debug\Shared.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\obj\Debug\IProvider.csprojAssemblyReference.cache
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\obj\Debug\IProvider.csproj.CoreCompileInputs.cache
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\obj\Debug\IProvider.csproj.CopyComplete
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\obj\Debug\IProvider.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\IProvider\obj\Debug\IProvider.pdb

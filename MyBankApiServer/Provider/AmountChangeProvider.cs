@@ -1,21 +1,23 @@
-﻿using BankApiServer.utilities;
-using MyBankApiServer.Models;
+﻿using DataTransfer;
+using IProvider;
+using Shared;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace MyBankApiServer.Managers
+namespace Provider
 {
-    public static class amountChangeManager
+    public class AmountChangeProvider : IAmountChangeProvider
     {
         /// <summary>
         /// 查询某个用户的储蓄记录
         /// </summary>
         /// <param name="did"></param>
         /// <returns></returns>
-        public static List<AmountChange> GetAmountChange(string did)
+        public List<AmountChange> GetAmountChange(string did)
         {
             List<AmountChange> list = new List<AmountChange>();
             SqlParameter[] paras = {
@@ -50,7 +52,7 @@ namespace MyBankApiServer.Managers
         /// <param name="deposit"></param>
         /// <param name="dstatus"></param>
         /// <returns>影响的行数</returns>
-        public static int InsertAmountChange(string did, string dname, string addr, string dtype, double rate, decimal deposit)
+        public int InsertAmountChange(string did, string dname, string addr, string dtype, double rate, decimal deposit)
         {
             AmountChange amountChange = new AmountChange();
             SqlParameter[] paras =
@@ -74,7 +76,7 @@ namespace MyBankApiServer.Managers
         /// </summary>
         /// <param name="pid"></param>
         /// <returns></returns>
-        public static int UpdateAmountChange(string pid)
+        public int UpdateAmountChange(string pid)
         {
             AmountChange amountChange = new AmountChange();
             SqlParameter[] paras =
@@ -90,7 +92,7 @@ namespace MyBankApiServer.Managers
         /// </summary>
         /// <param name="pid"></param>
         /// <returns></returns>
-        public static AmountChange GetAmountChangeByPid(string pid)
+        public AmountChange GetAmountChangeByPid(string pid)
         {
             AmountChange amountChange = new AmountChange();
             SqlParameter[] paras = {

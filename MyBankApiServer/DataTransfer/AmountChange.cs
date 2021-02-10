@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace MyBankApiServer.Models
+namespace DataTransfer
 {
+
     [Serializable]
     public class AmountChange
     {
@@ -18,4 +20,5 @@ namespace MyBankApiServer.Models
         public decimal deposit { set; get; }
         public bool dStatus { set; get; }
     }
+
 }

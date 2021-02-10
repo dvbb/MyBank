@@ -23,6 +23,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataTransfer\DataTransfer.csproj" />
+    <ProjectReference Include="..\IProvider\IProvider.csproj" />
+    <ProjectReference Include="..\Provider\Provider.csproj" />
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" />
   </ItemGroup>
 

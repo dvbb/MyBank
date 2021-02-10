@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace BankApiServer.utilities
+namespace Shared
 {
+
     public static class SqlHelper
     {
         static string connStr = "server=.;database=MyBank;Integrated Security=SSPI";
@@ -48,7 +50,7 @@ namespace BankApiServer.utilities
         public static int UpdateSQL(string spName, SqlParameter[] paras)
         {
 
-            using(conn = new SqlConnection(connStr))
+            using (conn = new SqlConnection(connStr))
             {
                 try
                 {
@@ -67,6 +69,7 @@ namespace BankApiServer.utilities
                 }
             }
         }
+
 
     }
 }

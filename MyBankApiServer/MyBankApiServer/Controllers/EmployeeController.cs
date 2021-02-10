@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BankApiServer.Managers;
-using BankApiServer.Models;
+using DataTransfer;
+using IProvider;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBankApiServer.Controllers
@@ -13,24 +13,31 @@ namespace MyBankApiServer.Controllers
 
     public class EmployeeController : Controller
     {
+        //实现依赖注入
+        private IEmployeeProvider _employee;
+
+        public EmployeeController(IEmployeeProvider employee)
+        {
+            _employee = employee;
+        }
 
         [HttpGet]
         public List<Employee> GetAllEmployee()
         {
-            return employeeManager.GetEmployee();
+            return _employee.GetEmployee();
         }
 
         [HttpGet("{id}")]
         public Employee GetEmployee(string id)
         {
-            Employee employee = employeeManager.GetEmployee(id);
+            Employee employee = _employee.GetEmployee(id);
             return employee;
         }
 
         [HttpPut("{id}/{pwd}")]
-        public int UpdatePwd(string id,string pwd)
+        public int UpdatePwd(string id, string pwd)
         {
-            return employeeManager.UpdatePwd(id,pwd);
+            return _employee.UpdatePwd(id, pwd);
         }
 
     }

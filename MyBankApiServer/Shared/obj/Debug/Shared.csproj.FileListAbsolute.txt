@@ -1,0 +1,5 @@
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Shared\bin\Debug\Shared.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Shared\bin\Debug\Shared.pdb
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Shared\obj\Debug\Shared.dll
+C:\Users\Rain\Desktop\新建文件夹\MyBank\MyBankApiServer\Shared\obj\Debug\Shared.pdb

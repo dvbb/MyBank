@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IProvider;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Provider;
 
 namespace MyBankApiServer
 {
@@ -33,6 +35,11 @@ namespace MyBankApiServer
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //依赖注入
+            services.AddScoped(typeof(IAmountChangeProvider), typeof(AmountChangeProvider));
+            services.AddScoped(typeof(IDepositorProvider), typeof(DepositorProvider));
+            services.AddScoped(typeof(IEmployeeProvider), typeof(EmployeeProvider));
 
             //添加swagger配置
             services.AddSwaggerGen(options =>
@@ -74,9 +81,9 @@ namespace MyBankApiServer
 
             //加入swagger中间件
             app.UseSwagger();
-            app.UseSwaggerUI(options=> 
+            app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json","MYBANK SWAGGER DOC");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "MYBANK SWAGGER DOC");
             });
 
 
